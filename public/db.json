@@ -1,0 +1,152 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "vue",
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Trending"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "A radical new approach to building user interfaces by shifting work into a compile step.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Loved"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend Framework",
+    "description": "The React Framework for the Web, enabling full-stack web applications with SSR and SSG.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Industry Standard"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "An open-source, cross-platform JavaScript runtime environment for building scalable network apps.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database / Caching",
+    "description": "An in-memory data structure store used as a database, cache, streaming engine, and message broker.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fastest"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Programming Language",
+    "description": "The core lightweight, interpreted programming language of the Web.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Must Learn"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Programming Language",
+    "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at scale.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "High Demand"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Programming Language",
+    "description": "A high-level, class-based, object-oriented programming language designed for enterprise systems.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "Enterprise"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Styling Framework",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build any design.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Top Choice"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps / Containerization",
+    "description": "A platform for developing, shipping, and running applications inside lightweight containers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "DevOps Core"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Programming Language",
+    "description": "A versatile programming language renowned for syntax readability, AI/ML, and web development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "AI & Web"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-based, distributed NoSQL database designed for modern app developers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Top NoSQL"
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "category": "API",
+    "description": "A query language for APIs and a runtime for fulfilling those queries with existing data.",
+    "icon": "https://icon.icepanel.io/Technology/svg/GraphQL.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Modern API"
+  }
+]
