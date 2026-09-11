@@ -8,7 +8,7 @@ import { GiCheckMark } from "react-icons/gi";
 export function Tech({tech, handleStack, stack}:ITechProps){
 
   return(
-    <div className="grid grid-rows-subgrid row-span-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl relative mx-2 md:mx-0">
+    <div className="grid grid-rows-subgrid row-span-4 shadow-[0_0_15px_rgba(0,0,0,0.3)] md:shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl relative mx-2 md:mx-0">
       <div>
         <img className="w-10" src={tech.icon} alt="icon" />
         <h3 className="text-xl font-bold">{tech.name}</h3>
