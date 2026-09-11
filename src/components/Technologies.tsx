@@ -1,4 +1,8 @@
-
+const technologyList=async()=>{
+  const res= await fetch('/public/db.json');
+  const data= await res.json();
+  return data
+}
 
 
 export function Technologies(){
