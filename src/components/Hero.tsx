@@ -2,7 +2,7 @@ import hero from "../assets/banner-stack.png";
 
 export function Hero() {
   return (
-    <div className="flex flex-row container mx-auto">
+    <div className="flex flex-col md:flex-row md:container px-2 mx-auto">
       <div className="flex flex-col justify-center flex-1">
         <h1 className="text-6xl font-bold my-4">Build Your Ideal</h1>
         <h1 className="text-6xl font-bold my-4">
