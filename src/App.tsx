@@ -1,11 +1,13 @@
 
+import { Nav } from "./components/Nav";
+
 function App() {
   return (
-    <div>
+    <div className="mb-100">
       <Nav/>
-      <Hero/>
+      {/* <Hero/>
       <Technologies/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
