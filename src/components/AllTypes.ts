@@ -1,4 +1,4 @@
-export interface TechType{
+export interface ITechType{
   id:string
   name:string
   category:string
@@ -7,4 +7,9 @@ export interface TechType{
   rating:number
   difficulty:string
   badge:string
+}
+
+
+export interface ITechnologiesProps{
+  promise:Promise<ITechType[]>
 }
