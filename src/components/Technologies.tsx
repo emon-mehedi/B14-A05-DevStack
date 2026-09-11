@@ -2,23 +2,27 @@ import { use, useState} from "react";
 import type { ITechnologiesProps, ITechType } from "./AllTypes";
 import { Tech } from "./Tech";
 import toast, { Toaster } from "react-hot-toast";
+import { YourStack } from "./YourStack";
 
 export function Technologies({promise}:ITechnologiesProps){
 
-const [stack, setStack]=useState<ITechType[]>([]);
-
-const handleStack=(tech:ITechType):void=>{
-  const exists=stack.find(each=>each===tech);
-  if(exists){
-    toast.error("Technology already added");
-    return
-  } else {
-    const newStack=[...stack, tech];
-    setStack(newStack);
-    toast.success("Added to stack")
+  
+  //Adding technology to stack
+  const [stack, setStack]=useState<ITechType[]>([]);
+  const handleStack=(tech:ITechType):void=>{
+    const exists=stack.find(each=>each===tech);
+    if(exists){
+      toast.error("Technology already added");
+      return
+    } else {
+      const newStack=[...stack, tech];
+      setStack(newStack);
+      toast.success("Added to stack")
+    }
   }
-}
 
+
+  //Removing items from stack
   const techList=use(promise);
   console.log(stack);
   return(
@@ -33,11 +37,18 @@ const handleStack=(tech:ITechType):void=>{
           }
         </div>
         <div className="flex-1">
-          <div className="flex flex-col items-center shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl">
-            <h3>Your Stach</h3>
-            <p>No Technology Selected</p>
-            <div>
-              <p>Your stack is empty</p>
+          <div className="flex flex-col items-start shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl">
+            <h3 className="text-2xl font-bold">Your Stack</h3>
+            <p>{stack.length===1?"1 Technology Selected":stack.length>1?`${stack.length} Technologies Selected`:"No technology Selected"} </p>
+            <div className="w-full">{
+              stack.length===0
+                ?<button className="btn btn-dash w-full mt-3 py-8 rounded-xl">Your stack is empty</button>
+                :<div>
+                  {
+                    stack.map(tech=><YourStack key={tech.id} tech={tech}/>)
+                  }
+                </div>
+              }
             </div>
           </div>
         </div>

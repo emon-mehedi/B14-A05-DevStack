@@ -32,7 +32,7 @@
   {
     "id": "nextjs",
     "name": "Next.js",
-    "category": "Frontend Framework",
+    "category": "Framework",
     "description": "The React Framework for the Web, enabling full-stack web applications with SSR and SSG.",
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
@@ -62,7 +62,7 @@
   {
     "id": "redis",
     "name": "Redis",
-    "category": "Database / Caching",
+    "category": "Database",
     "description": "An in-memory data structure store used as a database, cache, streaming engine, and message broker.",
     "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
     "rating": 4.8,
@@ -72,7 +72,7 @@
   {
     "id": "javascript",
     "name": "JavaScript",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "The core lightweight, interpreted programming language of the Web.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.7,
@@ -82,7 +82,7 @@
   {
     "id": "typescript",
     "name": "TypeScript",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at scale.",
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
@@ -92,7 +92,7 @@
   {
     "id": "java",
     "name": "Java",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A high-level, class-based, object-oriented programming language designed for enterprise systems.",
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
     "rating": 4.6,
@@ -102,7 +102,7 @@
   {
     "id": "tailwindcss",
     "name": "Tailwind CSS",
-    "category": "Styling Framework",
+    "category": "Framework",
     "description": "A utility-first CSS framework packed with classes that can be composed to build any design.",
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.9,
@@ -112,7 +112,7 @@
   {
     "id": "docker",
     "name": "Docker",
-    "category": "DevOps / Containerization",
+    "category": "DevOps",
     "description": "A platform for developing, shipping, and running applications inside lightweight containers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
@@ -122,7 +122,7 @@
   {
     "id": "python",
     "name": "Python",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A versatile programming language renowned for syntax readability, AI/ML, and web development.",
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,

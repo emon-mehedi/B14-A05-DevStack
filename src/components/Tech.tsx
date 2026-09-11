@@ -1,11 +1,11 @@
 import { MdOutlineStar } from "react-icons/md";
-import type { ITechProps, ITechType } from "./AllTypes";
+import type { ITechProps } from "./AllTypes";
 
 
 
 export function Tech({tech, handleStack}:ITechProps){
   return(
-    <div className="shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl relative">
+    <div className="grid grid-rows-subgrid row-span-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl relative">
       <div>
         <img className="w-10" src={tech.icon} alt="icon" />
         <h3 className="text-xl font-bold">{tech.name}</h3>
