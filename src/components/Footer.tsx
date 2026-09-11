@@ -43,7 +43,10 @@ export function Footer(){
       <hr />
       <div className="flex flex-row justify-between items-center my-15">
         <p><PiCopyright className="inline"/>2026 Dev stack. All rights reserved.</p>
-        <p><span className="mr-3">Privacy</span><span>Terms</span></p>
+        <ul className="flex flex-row gap-5">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
       </div>
     </footer>
   )
