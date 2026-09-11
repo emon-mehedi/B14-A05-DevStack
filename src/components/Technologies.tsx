@@ -51,9 +51,12 @@ export function Technologies({promise}:ITechnologiesProps){
               stack.length===0
                 ?<button className="btn btn-dash w-full mt-3 py-8 rounded-xl">Your stack is empty</button>
                 :<div>
-                  {
-                    stack.map(tech=><YourStack key={tech.id} tech={tech}  removeStack={removeStack} />)
-                  }
+                  <div>
+                    {
+                      stack.map(tech=><YourStack key={tech.id} tech={tech}  removeStack={removeStack} />)
+                    }
+                  </div>
+                  <button className="border w-full mt-10 rounded-sm py-1 font-bold text-[#ff0000]"  onClick={()=>setStack([])}>Remove All</button>
                 </div>
               }
             </div>
