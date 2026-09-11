@@ -11,7 +11,7 @@ export function YourStack({tech, removeStack}:IYourStackProps){
           <p className="text-[0.7rem]">{tech.category}</p>
         </div>
       </div>
-      <button onClick={()=>removeStack(tech)}><RxCross1/></button>
+      <button className="p-2" onClick={()=>removeStack(tech)}><RxCross1/></button>
     </div>
   )
 }

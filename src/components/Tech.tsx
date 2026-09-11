@@ -1,9 +1,12 @@
 import { MdOutlineStar } from "react-icons/md";
-import type { ITechProps } from "./AllTypes";
+import type { ITechProps} from "./AllTypes";
+import { GiCheckMark } from "react-icons/gi";
 
 
 
-export function Tech({tech, handleStack}:ITechProps){
+
+export function Tech({tech, handleStack, stack}:ITechProps){
+
   return(
     <div className="grid grid-rows-subgrid row-span-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] p-5 rounded-xl relative">
       <div>
@@ -18,7 +21,7 @@ export function Tech({tech, handleStack}:ITechProps){
           <p>{tech.difficulty}</p>
           <div className="flex flex-row items-center"><MdOutlineStar color="#fbbf24"/>{tech.rating}</div>
         </div>
-        <button className="btn btn-neutral h-7 w-full mb-2" onClick={()=>handleStack(tech)}>Add to Stack</button>
+        <button className="btn btn-neutral h-7 w-full mb-2" disabled={stack.some(t=>t===tech)} onClick={()=>{handleStack(tech)}}>{stack.some(t=>t===tech)?<><GiCheckMark/><span>Added to Stack</span></>:"Add to Stack"}</button>
       </div>
       <button className="absolute right-5 top-5 border rounded-full px-2 text-[]">{tech.badge}</button>
     </div>

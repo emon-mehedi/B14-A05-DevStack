@@ -31,6 +31,7 @@ export function Technologies({promise}:ITechnologiesProps){
     toast.success("Removed from stack")
   }
 
+
   return(
     <div className="container mx-auto mb-50">
       <Toaster position="top-right"/>
@@ -39,7 +40,7 @@ export function Technologies({promise}:ITechnologiesProps){
       <div className="flex flex-row gap-6">
         <div className="grid grid-cols-3 gap-3 flex-3">
           {
-            techList.map(tech=><Tech key={tech.id} tech={tech} handleStack={handleStack}/>)
+            techList.map(tech=><Tech key={tech.id} tech={tech} handleStack={handleStack} stack={stack}/>)
           }
         </div>
         <div className="flex-1">
@@ -51,7 +52,7 @@ export function Technologies({promise}:ITechnologiesProps){
                 ?<button className="btn btn-dash w-full mt-3 py-8 rounded-xl">Your stack is empty</button>
                 :<div>
                   {
-                    stack.map(tech=><YourStack key={tech.id} tech={tech}  removeStack={removeStack}/>)
+                    stack.map(tech=><YourStack key={tech.id} tech={tech}  removeStack={removeStack} />)
                   }
                 </div>
               }
