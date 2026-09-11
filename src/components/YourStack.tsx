@@ -1,7 +1,7 @@
 import { RxCross1 } from "react-icons/rx";
-import type { ITechType } from "./AllTypes";
+import type { IYourStackProps } from "./AllTypes";
 
-export function YourStack({tech}:{tech:ITechType}){
+export function YourStack({tech, removeStack}:IYourStackProps){
   return(
     <div className="flex flex-row justify-between items-center border rounded-xl p-3 mb-2">
       <div className="flex flex-row">
@@ -11,7 +11,7 @@ export function YourStack({tech}:{tech:ITechType}){
           <p className="text-[0.7rem]">{tech.category}</p>
         </div>
       </div>
-      <button><RxCross1/></button>
+      <button onClick={()=>removeStack(tech)}><RxCross1/></button>
     </div>
   )
 }

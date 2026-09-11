@@ -4,15 +4,17 @@ import { Tech } from "./Tech";
 import toast, { Toaster } from "react-hot-toast";
 import { YourStack } from "./YourStack";
 
-export function Technologies({promise}:ITechnologiesProps){
 
+export function Technologies({promise}:ITechnologiesProps){
+  
+  const techList=use(promise);
   
   //Adding technology to stack
   const [stack, setStack]=useState<ITechType[]>([]);
   const handleStack=(tech:ITechType):void=>{
     const exists=stack.find(each=>each===tech);
     if(exists){
-      toast.error("Technology already added");
+      toast.error("Already exists in stack");
       return
     } else {
       const newStack=[...stack, tech];
@@ -23,8 +25,12 @@ export function Technologies({promise}:ITechnologiesProps){
 
 
   //Removing items from stack
-  const techList=use(promise);
-  console.log(stack);
+  const removeStack=(tech:ITechType):void=>{
+    const newStack=stack.filter(each=>each!==tech);
+    setStack(newStack);
+    toast.success("Removed from stack")
+  }
+
   return(
     <div className="container mx-auto mb-50">
       <Toaster position="top-right"/>
@@ -45,7 +51,7 @@ export function Technologies({promise}:ITechnologiesProps){
                 ?<button className="btn btn-dash w-full mt-3 py-8 rounded-xl">Your stack is empty</button>
                 :<div>
                   {
-                    stack.map(tech=><YourStack key={tech.id} tech={tech}/>)
+                    stack.map(tech=><YourStack key={tech.id} tech={tech}  removeStack={removeStack}/>)
                   }
                 </div>
               }

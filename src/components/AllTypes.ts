@@ -19,3 +19,9 @@ export interface ITechProps{
   tech:ITechType
   handleStack:(tech:ITechType)=>void
 }
+
+
+export interface IYourStackProps{
+  tech:ITechType
+  removeStack:(tech:ITechType)=>void
+}
