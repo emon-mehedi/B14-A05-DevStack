@@ -1,20 +1,22 @@
 import { PiCopyright } from "react-icons/pi";
 import logo from '../assets/logo-text.png'
+import { RxDotFilled } from "react-icons/rx";
+
 
 export function Footer(){
   return(
-    <footer className="container mx-auto">
+    <footer className="container mx-auto px-2 md:px-0">
       <div className="flex flex-row mb-15">
-        <div className="flex-2">
-          <img src={logo} alt="logo" />
-          <p className="my-3">Curated tools, technologies, and resources for developers building modern software.</p>
-          <ul className="flex flex-row [&>li]:mr-2 [&>li]:font-bold">
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Twitter</a></li>
+        <div className="md:flex-2">
+          <img src={logo} alt="logo" className="mx-auto md:mx-0"/>
+          <p className="my-3 mx-auto md:mx-0">Curated tools, technologies, and resources for developers building modern software.</p>
+          <ul className="flex flex-row items-center [&>li]:mr-2 [&>li]:font-bold w-fit mx-auto md:mx-0">
+            <li><a href="#">Github</a></li><RxDotFilled className="md:hidden"/>
+            <li><a href="#">Twitter</a></li><RxDotFilled className="md:hidden"/>
             <li><a href="#">LinkedIn</a></li>
           </ul>
         </div>
-        <div className="flex-3 flex flex-row justify-between">
+        <div className="hidden md:flex-3 md:flex md:flex-row md:justify-between">
           <div>
             <h3 className="font-bold">Product</h3>
             <ul>
