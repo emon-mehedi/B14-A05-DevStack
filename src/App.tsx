@@ -1,4 +1,5 @@
 
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 
@@ -7,8 +8,8 @@ function App() {
     <div className="mb-100">
       <Nav/>
       <Hero/>
-      {/* <Technologies/>
-      <Footer/> */}
+      {/* <Technologies/> */}
+      <Footer/>
     </div>
   );
 }
