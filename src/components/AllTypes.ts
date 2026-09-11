@@ -13,3 +13,9 @@ export interface ITechType{
 export interface ITechnologiesProps{
   promise:Promise<ITechType[]>
 }
+
+
+export interface ITechProps{
+  tech:ITechType
+  handleStack:(tech:ITechType)=>void
+}

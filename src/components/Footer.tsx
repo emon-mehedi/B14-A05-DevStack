@@ -41,7 +41,7 @@ export function Footer(){
         </div>
       </div>
       <hr />
-      <div className="flex flex-row justify-between items-center mt-15">
+      <div className="flex flex-row justify-between items-center my-15">
         <p><PiCopyright className="inline"/>2026 Dev stack. All rights reserved.</p>
         <p><span className="mr-3">Privacy</span><span>Terms</span></p>
       </div>

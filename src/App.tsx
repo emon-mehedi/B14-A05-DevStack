@@ -15,7 +15,7 @@ function App() {
   const [techListPromise]=useState(technologyList());
   
   return (
-    <div className="mb-100">
+    <div>
       <Nav/>
       <Hero/>
       <Suspense fallback={<p>Loading...</p>}>
