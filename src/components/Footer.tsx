@@ -9,7 +9,7 @@ export function Footer(){
       <div className="flex flex-row mb-15">
         <div className="md:flex-2">
           <img src={logo} alt="logo" className="mx-auto md:mx-0"/>
-          <p className="my-3 mx-auto md:mx-0">Curated tools, technologies, and resources for developers building modern software.</p>
+          <p className="my-3 mx-auto md:mx-0 text-center md:text-left">Curated tools, technologies, and resources for developers building modern software.</p>
           <ul className="flex flex-row items-center [&>li]:mr-2 [&>li]:font-bold w-fit mx-auto md:mx-0">
             <li><a href="#">Github</a></li><RxDotFilled className="md:hidden"/>
             <li><a href="#">Twitter</a></li><RxDotFilled className="md:hidden"/>
