@@ -1,27 +1,40 @@
-import {Suspense, useState } from "react";
+import { Suspense, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 import { Technologies } from "./components/Technologies";
 import type { ITechType } from "./components/AllTypes";
+import { Bounce, ToastContainer } from "react-toastify";
 
-const technologyList=async():Promise<ITechType[]>=>{
-  const res= await fetch('/db.json');
-  const data= await res.json();
-  return data
-}
-function App() {  
-  
-  const [techListPromise]=useState(technologyList());
-  
+const technologyList = async (): Promise<ITechType[]> => {
+  const res = await fetch("/db.json");
+  const data = await res.json();
+  return data;
+};
+function App() {
+  const [techListPromise] = useState(technologyList());
+
   return (
     <div>
-      <Nav/>
-      <Hero/>
+      <Nav />
+      <Hero />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
       <Suspense fallback={<p>Loading...</p>}>
-        <Technologies promise={techListPromise}/>
+        <Technologies promise={techListPromise} />
       </Suspense>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
