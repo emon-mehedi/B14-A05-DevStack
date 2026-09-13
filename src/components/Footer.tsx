@@ -8,7 +8,7 @@ export function Footer() {
       <div className="flex flex-row mb-15">
         <div className="md:flex-2">
           <img src={logo} alt="logo" className="mx-auto md:mx-0" />
-          <p className="my-3 mx-auto md:mx-0 text-center md:text-left0">
+          <p className="my-3 mx-auto md:mx-0 text-center md:text-left">
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>

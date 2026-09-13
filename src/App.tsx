@@ -12,7 +12,7 @@ const technologyList = async (): Promise<ITechType[]> => {
   return data;
 };
 function App() {
-  const [techListPromise] = useState(technologyList());
+  const [techListPromise] = useState(()=>technologyList());
 
   return (
     <div>
